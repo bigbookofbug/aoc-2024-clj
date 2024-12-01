@@ -1,0 +1,24 @@
+{
+ :deps {
+        ;; maven lib
+        ;;org.clojure/clojurescript {:mvn/version "1.11.54"}
+
+        ;; git lib
+        ;; git/name {:git/url "" :git/sha ""}
+
+        ;; local dir
+        ;; localdir/name {:loca/root ""}
+        }
+
+ :paths ["src" "resources"]
+ :aliases
+ {:test {:extra-paths ["test"]}
+  ;; or whatever you want the CLI exec-fn to be named
+  :run
+  ;; the NS for the exec-fn
+  {:ns-default aoc
+   ;; name of the exec-fn
+   :exec-fn -main
+   ;; args to be passed to the exec-fn
+  ; :exec-args {:name ""}
+   }}}
